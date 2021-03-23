@@ -1,0 +1,97 @@
+/* *MISSING  BACKGROUND COLOR*
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+}
+
+.hide {
+  display: none;
+} */
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#mainText {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+#robot img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*IMG Layout*/
+#body {
+  position: absolute;
+  left: calc(50% - 108px);
+  top: calc(50% - 120px);
+}
+
+#head {
+  position: absolute;
+  left: calc(50% - 61px);
+  top: calc(50% - 215px);
+}
+
+#armLeft {
+  position: absolute;
+  left: calc(50% - 182px);
+  top: calc(50% - 120px);
+}
+
+#armRight {
+  position: absolute;
+  left: calc(50% + 104px);
+  top: calc(50% - 120px);
+}
+
+#legs {
+  position: absolute;
+  left: calc(50% - 61px);
+  top: calc(50% + 80px);
+}
+
+#btn {
+  position: absolute;
+  top: 78%;
+  left: calc(50% - 6rem);
+  transition: transform 0.4s 0.1s ease-out;
+}
+
+button {
+  overflow: hidden;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  width: 12rem;
+  height: 5rem;
+  border: none;
+  border-radius: 45px;
+  -webkit-border-radius: 45px;
+  -moz-border-radius: 45px;
+  -ms-border-radius: 45px;
+  -o-border-radius: 45px;
+  transition: transform 0.2s, background-color 0s 0.1s, color 0s 0.1s;
+  -webkit-transition: transform 0.2s, background-color 0s 0.1s, color 0s 0.1s;
+  -moz-transition: transform 0.2s, background-color 0s 0.1s, color 0s 0.1s;
+  -ms-transition: transform 0.2s, background-color 0s 0.1s, color 0s 0.1s;
+  -o-transition: transform 0.2s, background-color 0s 0.1s, color 0s 0.1s;
+}
+
+#btn:hover,
+button:hover {
+  transform: rotateY(180deg);
+  background-color: #fff;
+  color: hotpink;
+}
+
+#btn:hover #btn {
+  transform: rotateY(900deg);
+}

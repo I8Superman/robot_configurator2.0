@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 850.39 850.39">
+  <g class="hide" data-name="legs_3" id="legs_3">
+    <image id="legs_3_img" width="152" height="160" transform="translate(350.13 491.73)" xlink:href="robots/robot_21.png"/>
+  </g>
+  <g class="hide" data-name="legs_2" id="legs_2" style="fill: none; isolation: isolate">
+    <image id="legs_2_img" width="173" height="142" transform="translate(338.08 493.15)" xlink:href="robots/robot_22.png"/>
+  </g>
+  <g class="hide" data-name="legs_1" id="legs_1" style="fill: none; isolation: isolate">
+    <image id="legs_1_img" width="118" height="140" transform="translate(366.67 493.57)" xlink:href="robots/robot_23.png"/>
+  </g>
+  <g class="hide" data-name="arm_3_right" id="arm_3_right">
+    <image id="arm_3_r_img" width="116" height="182" transform="translate(524.58 321.7)" xlink:href="robots/robot_24.png"/>
+  </g>
+  <g class="hide" data-name="arm_3_left" id="arm_3_left">
+    <image id="arm_3_l_img" width="113" height="195" transform="translate(216.58 323.25)" xlink:href="robots/robot_25.png"/>
+  </g>
+  <g class="hide" data-name="arm_2_right" id="arm_2_right" style="fill: none; isolation: isolate">
+    <image id="arm_2_r_img" width="83" height="241" transform="translate(525.28 319.63)" xlink:href="robots/robot_26.png"/>
+  </g>
+  <g class="hide" data-name="arm_2_left" id="arm_2_left" style="fill: none; isolation: isolate">
+    <image id="arm_2_l_img" width="76" height="242" transform="translate(253.94 317.13)" xlink:href="robots/robot_27.png"/>
+  </g>
+  <g class="hide colorize" data-name="arm_1_right" id="arm_1_right" style="fill: none; isolation: isolate">
+    <g id="arm_1_r" style="fill: none; isolation: isolate">
+      <path d="M548.28,373.36l20,2v2h2v3h-2v2h2v3c-.29.75-2.71.21-2,3,.67.33,1.34.66,2,1v2h-2v3h2v2l-2,1c-.73,2.57,1.78,2.15,2,4l-2,1-1,3h3v1c-4.64,1.46-2.5,1.15-2,5,0,0,2,0,1,1h-2v3h2v2h-2v3h2c-1.11,4.09-1.27,1.15-3,3,.34,1,.67,2,1,3h1c-.66,1-1.33,2-2,3,.67.33,1.34.66,2,1,.67,2.82-1.75,2.28-2,3a2.55,2.55,0,0,0,1,3,2.7,2.7,0,0,1-1,3c.34,1,.67,2,1,3h-1v2h-1c.67,1,1.34,2,2,3l-2,1c-.65,2.85,1.61,2.12,2,3v2h-2v2c.33.77,2.19.39,2,2h-1c-.33,1-.66,2-1,3,.09.56,2.33.51,2,2l-2,1v3h2c-.33.66-.66,1.33-1,2h-1c-.54,1.63,1,1.86,1,2q-.49,3-1,6h2v2h-2v3h2v2h-2c.71,4,.41,3.66,0,8h2c-.82,1.87-1.48,2.61-2,5h2c-.82,1.87-1.48,2.61-2,5h2c-.82,1.87-1.48,2.61-2,5h2v2h-2v3h2v2h-2c.45,2.22,1.87,3.47,2,5h-1a10,10,0,0,0-1,4h2c-1.12,4.09-2.08,1.7-3,3-1.16,1.64,1.61.79,2,1v1h-1c.34,1,.67,2,1,3l-3,1v1h-2v1h-16a7.31,7.31,0,0,0-2-3c.46-1.36,1.4-1.68,1-4,0,0-1.28-.21-1-2a2.7,2.7,0,0,0,1-3s-1.29-.12-1-2a2.72,2.72,0,0,0,1-3s-1.29-.12-1-2h1c.46-2.31-1-3-1-3,.34-1,.67-2,1-3v-1h-1a2.81,2.81,0,0,1,1-3c.53-2.41-.93-2.58-1-4,.34-.67.67-1.34,1-2h-1c.34-.67.67-1.34,1-2l-2-1c.14-1.7,2-1.83,2-2a1.57,1.57,0,0,0-1-2q.51-3,1-6c-2-.58-.86.12-2-1l3-1c1-2.34-1.9-2.69-2-3,.34-1.67.67-3.34,1-5,0-.15-1.38-.38-1-2l2-1c-.66-1.34-1.33-2.67-2-4h2c.07-.72-1.64-3.36-2-5h2c-.82-1.88-1.48-2.62-2-5h2v-3h-2v-3h2v-2h-2v-3h2c-.33-1.34-.66-2.67-1-4h-1v-1h2a9.34,9.34,0,0,0-1-4h-1c.16-1.66,2-1.87,2-2-.33-1.67-.66-3.34-1-5h2c-.33-1.34-.66-2.67-1-4h-1v-1h2c-.33-1.67-.66-3.34-1-5l2-1c-.19-1.73-2-1.88-2-2-.61-2.9,1.6-2.1,2-3v-2h-2v-2h2v-3h-2v-2c2.77-.73,2.24-.28,3-3h-2v-3h2c-2.45-5.88-1.31-1.51,0-7h-2c.34-1.34.67-2.67,1-4h1c-.66-1-1.33-2-2-3,1.72-1.13,1.36-.64,2-3h-2c.47-2.4,1.16-3.15,2-5h-2v-3h2Z" />
+    </g>
+    <image id="arm_1_r_img" width="59" height="276" transform="translate(520.28 314.36)" xlink:href="robots/robot_28.png"/>
+  </g>
+  <g class="hide colorize" data-name="arm_1_left" id="arm_1_left" style="fill: none; isolation: isolate">
+    <g id="arm_1_l" style="fill: none; mix-blend-mode: multiply;isolation: isolate">
+      <path d="M309.79,378.39h2v3h-1c-.8,1.82-1.26.78,0,2s0,.4,2,1v2l-3,1c.84,1.13-.13.14,1,1,1.14,1.14,0,.4,2,1-.65,2.74-1.31,2.27-2,5h3v1c-2,1.13-2.34,1.41-3,4h3c-.72,2.76-.28,2.24-3,3v2l3,1-3,4c2.76.72,2.24.28,3,3h-2v3h2c-.65,2.74-1.31,2.27-2,5h2v3h-2v3h2v2h-2v3h2v2h-2c1.16,4.08.91,1.06,3,3v1h-1c-1.14,1.14,0,.4-2,1,1.16,4.08.91,1.06,3,3v1h-1c-1.14,1.14,0,.4-2,1v3h3v1c-5.26,2.66-1.46,1,0,6h-2c.33,1.33.67,2.66,1,4h1c.23,1.75-2,1.74-2,2-.08.57,1.68,3.44,2,5h-2v3h3v1h-1c-1.14,1.14,0,.4-2,1v4h1v-1c.86-1.89,1,2,1,2h-2v3h2v2h-2c-.33,1-.67,2-1,3h3v1a6.12,6.12,0,0,0-3,3h1c1.14,1.14,0,.4,2,1-2.05,2.52-2.41.41-3,5h3v1h-2v3s1.68.81,2,2h-1l-2,3h3v2c-.35.8-2.72.21-2,3l2,1v2h-2v3h3v1h-2v3h2v2h-2c.38,3.54,1.24,3,2,6l-7,1v1l-16,2v-3h2v-2c-2.76-.73-2.24-.28-3-3h3v-2c-2.76-.73-2.24-.28-3-3h2c-.77-3.22-1.51-2.16-2-6h2v-1c-1.91-1.26-1.66-1-2-4h2v-1a6.75,6.75,0,0,1-3-3c2.88-2.11,2-.93,1-4h-1v-1h1c1.14-1.14,0-.4,2-1v-2h-2v-3h2v-2l-3-1v-1h1c1.14-1.14,0-.4,2-1-.72-2.76-.28-2.24-3-3v-2h3c-.72-2.76-.28-2.24-3-3v-2h3v-3h-2c.68-3.81.66-3.2,0-7h2v-3c-2-.58-.87.12-2-1,1.91-1.26,1.66-1,2-4h-2v-2h2v-3h-3v-1c1.36-1.17,1.53-1.83,2-4h-2v-2h2v-3h-2c.64-2.74,1.31-2.28,2-5h-2c.64-2.74,1.31-2.28,2-5l-3-1v-1h1c1.14-1.14,0-.4,2-1-.65-2.74-1.31-2.28-2-5h2v-3h-3v-2h3c-.72-2.76-.28-2.24-3-3v-2h3v-1c-1.14-1.14-.4,0-1-2h-2v-2h3v-1c-1.14-1.14-.4,0-1-2h-2v-2h3v-1c-1.14-1.14-.4,0-1-2h-2v-2h2v-3h-2v-3h2v-1c-1.91-1.26-1.66-1-2-4,1.14-1.14.4,0,1-2h-2c.64-2.74,1.31-2.28,2-5h-3v-1h1v-3h1v-1h-3v-1h1c1.78-1.59,16.62-3,21-3a6.8,6.8,0,0,0,3,3C310.84,376.19,310.4,376,309.79,378.39Z" />
+    </g>
+    <image id="arm_1_l_img" width="53" height="273" transform="translate(278.81 314.36)" xlink:href="robots/robot_29.png"/>
+  </g>
+  <g class="hide" data-name="head_3" id="head_3">
+    <image id="head_3_img" width="75" height="109" transform="translate(390.82 201.9)" xlink:href="robots/robot_210.png"/>
+  </g>
+  <g class="hide" data-name="head_2" id="head_2" style="fill: none; isolation: isolate">
+    <image id="head_2_img" width="117" height="109" transform="translate(369.29 201.93)" xlink:href="robots/robot_211.png"/>
+  </g>
+  <g class="hide" data-name="head_1" id="head_1" style="fill: none; isolation: isolate">
+    <image id="head_1_img" width="97" height="94" transform="translate(379.58 215.93)" xlink:href="robots/robot_212.png"/>
+  </g>
+  <g class="hide" data-name="body_2" id="body_2" style="fill: none; isolation: isolate">
+    <g class="colorize" id="torso_2" style="fill: none; isolation: isolate">
+      <path d="M416.32,306.4h2c-.84,1.13.13.14-1,1v1h-3v-1C416.33,306.82,415.18,307.52,416.32,306.4Z" />
+      <path d="M390.32,358.4h-12a74.86,74.86,0,0,0-1-14l-3-1v-1l-5,1c-1,5.38-1,13.14-1,20h-2c-.55,3.08-1.25,3.91,0,7h1c.33,3.33.67,6.66,1,10h-3c.11,4.53.27,4.39,2,7h1c.33,3.33.67,6.66,1,10h-3c-.33,2-.67,4-1,6l3,1c.33,1.66.67,3.33,1,5h-1v4l-2,1v3h-1c.33,1,.67,2,1,3h2v11h-1v2h-1c.67,2.66,1.33,5.33,2,8l3,1c-.22,6.29-.75,12.56,3,15v1c1.88,1.2,4.27.25,6,0q.49-8,1-16h9v43h1v8c-19.87.05-41.72-.1-60-1-1-11.09-1-25.37-1-38v-17c-2.93-10.45-1-32.21-1-45q-.49-41.5-1-83h12v-1l4,1h1v-1c5.67-1.45,13.73.62,18,1,17,1.47,35.44-.87,51-1v1h-1c-1,1.28-3.07,1.82-4,3-.33,1-.67,2-1,3h-7v1h-7s-.13.67-2,1c-2.37,4.07-3.07,3.75-3,11,1.5,1.68,1,5.82,1,9Z" />
+      <path d="M526.32,311.4a62.25,62.25,0,0,1-1,27v35h-1v47h-1v31h-1v30h-1v13c-4.09,1.5-11.36,1-17,1h-33v-1h-7q-.49-65-1-130v-33c0-5.1.51-10.44-2-13-2.92-3.14-7.5-1.59-13-2h-3c-.33-1-.67-2-1-3-.93-1.18-3-1.72-4-3l33-1c6.65,1.86,17.68,1,26,1Z" />
+      <path d="M475.32,335.4c-.73,2.66-1.61,3.12-3,5h-1c-.33,1.66-.67,3.33-1,5h-1q.49,6.5,1,13h1c.33,1,.67,2,1,3l5,4,1,2,6,1v1h8v-1h3v-1h2v-1h2v-1a8.31,8.31,0,0,1,4-2c.75-3.57,3-6,4-9v-10c-3.68-3.35-3-8.43-9-10C492.52,327.48,481.13,333.82,475.32,335.4Z" />
+      <path d="M471.32,484.4l24,1q.49-21,1-42c0-7.53-1.14-18.19,1-24h-2c-2.27-2-18.22-1.09-23-1-1.95,5.32-1,15-1,22Z" />
+    </g>
+    <g class="colorize" id="chest_2" style="fill: none; isolation: isolate">
+      <path d="M445.32,316.4h14a21.94,21.94,0,0,0,4,5v170h-1v10h-15v5h-41v-4c-3.57-1.34-9.91-1-15-1q-.49-70-1-140c0-10.17.43-22.45-1-31-1.06-6.33.84-10.71,4-13v-1h8v-1h7c.93-2,2.31-4.79,4-6h2v-1c1.23-1,1.93-.74,3-2,6-.18,14.6-1,19,1v1h2l2,3C443.05,313.35,444.34,312.53,445.32,316.4Z" />
+    </g>
+    <image id="body_2_img" width="200" height="223" transform="translate(328.32 284.4)" xlink:href="robots/robot_213.png"/>
+  </g>
+</svg>
