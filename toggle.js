@@ -18,7 +18,6 @@ async function init() {
   let response = await fetch("robot/robot_parts.svg");
   let svgData = await response.text();
   document.querySelector("#preview").innerHTML = svgData;
-  // console.log;
   makeClickableParts();
   startManipulatingSvg();
 }
@@ -44,6 +43,7 @@ function togglePart(e) {
 
   function removeOldPart() {
     const partToHide = parts[partName];
+    console.log(partToHide);
 
     if (partToHide === "") {
       // If nothing was previously selected, nothing will be removed
@@ -65,10 +65,10 @@ function togglePart(e) {
     //console.log(parts);
     const partToShow = document.querySelector(`#${clickedPart}`);
     partToShow.classList.remove("hide");
+
+    //reset robot
+    document.querySelector("#btn button").addEventListener("click", () => {
+      partToShow.classList.add("hide");
+    });
   }
 }
-
-//reset robot
-document.querySelector("#btn button").addEventListener("click", () => {
-  document.querySelector("#preview svg").classList.add("hide");
-});
