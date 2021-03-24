@@ -96,23 +96,43 @@ body {
       "preview bodyparts"
       "colors reset";
     grid-template-columns: 60% 40%;
-    grid-template-rows: 80% 20%;
+    grid-template-rows: 70% 20%;
   }
   /* Here the preview_container takes up the grid area, but only serves to contain the #preview */
   #preview_container {
     grid-area: preview;
     margin: 0 1vw;
+    display: flex;
+    gap: 1vw;
+  }
+
+  #chosen {
+    background-color: rgb(236, 230, 241);
+    position: relative;
+    border-radius: 15px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    box-shadow: 5px 5px 15px 5px #d0d0d0;
   }
 
   #chosen ul {
-    position: absolute;
-    left: 0;
-    z-index: 200;
-    /* display: flex;
-    justify-content: flex-start; */
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+
+    padding: 0;
   }
   #chosen ul li {
-    padding: 10px;
+    padding: 0.3vw;
+  }
+
+  #chosen ul li img {
+    height: 3em;
+    margin: auto;
+    display: block;
   }
   /*CHOSEN PARTS TO ANIMATE*/
 
@@ -170,7 +190,11 @@ body {
 
   #colors {
     grid-area: colors;
-    margin: 1vw;
+    margin: 2vw 0 0 0;
+    padding-left: 2vw;
+  }
+  .color_btn:hover {
+    cursor: pointer;
   }
 
   #btn {

@@ -79,8 +79,14 @@ function togglePart(e) {
     previewImg.classList.remove("hide");
 
     // //Call new featureElement function to create element and add it to the list
-    const newfeatureElement = createChosenElement(previewImg);
-    document.querySelector("#chosen ul").appendChild(newfeatureElement);
+    console.log(target);
+    let parent = document.querySelector("#chosen ul");
+    let childElement = document.createElement("li");
+    console.log(parent);
+    let childImg = target.cloneNode(true);
+    childElement.appendChild(childImg);
+    parent.appendChild(childElement);
+
 
     //MAKE FLIP ANIMATION
   } else {
@@ -92,12 +98,12 @@ function togglePart(e) {
   }
 }
 
-function createChosenElement(chosenImg) {
-  const li = document.createElement("li");
-  li.dataset.name = chosenImg;
-  console.log(chosenImg.dataset.name);
-  const img = document.createElement("img");
-  img.src = `./robots/${chosenImg.dataset.name}.png`;
-  li.append(img);
-  return li;
-}
+// function createChosenElement(chosenImg) {
+//   const li = document.createElement("li");
+//   li.dataset.name = chosenImg;
+//   console.log(chosenImg.dataset.name);
+//   const img = document.createElement("img");
+//   img.src = `./robots/${chosenImg.dataset.name}.png`;
+//   li.append(img);
+//   return li;
+// }
