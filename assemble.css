@@ -43,7 +43,6 @@ input {
 }
 
 /* --- MOBILE VIEW --- */
-
 @media only screen and (max-width: 699px) {
   #configurator {
     padding: 3vw;
