@@ -1,14 +1,9 @@
 "use strict";
-//document.addEventListener("DOMContentLoaded", startManipulatingSvg);
 let elementToPaint;
 let color;
 
-
 export function startManipulatingSvg() {
-  console.log('Shits working');
   document.querySelectorAll(".colorize").forEach((g) => {
-    //document.querySelector("#body_1").classList.remove("hide");
-    //g.setAttribute("fill", "blue");
     g.addEventListener("click", colorElement);
     g.addEventListener("mouseover", selectArea);
     g.addEventListener("mouseout", deselectArea);
@@ -17,7 +12,6 @@ export function startManipulatingSvg() {
 
 function colorElement() {
   if (color != undefined) {
-    console.log((this.style.fill = color));
     this.style.fill = color;
   } else {
     this.style.fill = "lightgrey";
@@ -27,7 +21,6 @@ function colorElement() {
 
 function selectArea() {
   this.style.stroke = "black";
-  this.style.fill = "white";
 }
 
 function deselectArea() {
