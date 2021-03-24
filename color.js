@@ -1,19 +1,14 @@
 "use strict";
-document.addEventListener("DOMContentLoaded", start);
+//document.addEventListener("DOMContentLoaded", startManipulatingSvg);
 let elementToPaint;
 let color;
 
-async function start() {
-  let response = await fetch("./robot/robot_parts.svg");
-  let mySvgData = await response.text();
-  document.querySelector("#preview").innerHTML = mySvgData;
-  startManipulatingSvg();
-}
 
-function startManipulatingSvg() {
+export function startManipulatingSvg() {
+  console.log('Shits working');
   document.querySelectorAll(".colorize").forEach((g) => {
-    document.querySelector("#body_2").classList.remove("hide");
-    g.setAttribute("fill", "blue");
+    //document.querySelector("#body_1").classList.remove("hide");
+    //g.setAttribute("fill", "blue");
     g.addEventListener("click", colorElement);
     g.addEventListener("mouseover", selectArea);
     g.addEventListener("mouseout", deselectArea);
