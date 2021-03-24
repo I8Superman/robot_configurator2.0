@@ -53,7 +53,7 @@ function startAnimation() {
 function btnVisible() {
   setTimeout(() => {
     document.querySelector("#btn button").classList.remove("hide");
-  }, 5000);
+  }, 5500);
 }
 
 tl.from("#masterTextPath", dur, {

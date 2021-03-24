@@ -15,9 +15,9 @@ body {
 
 /*FOR COLORING OF SVGs TO WORK*/
 
-#body_1_img {
+/* #body_1_img {
   pointer-events: none;
-}
+} */
 svg {
   pointer-events: none;
 }
@@ -34,8 +34,15 @@ svg {
   pointer-events: all;
 }
 
-/* --- MOBILE VIEW --- */
+input {
+  position: absolute;
+  top: 83%;
+  left: 35%;
+  width: 75px;
+  height: 30px;
+}
 
+/* --- MOBILE VIEW --- */
 @media only screen and (max-width: 699px) {
   #configurator {
     padding: 3vw;
