@@ -12,7 +12,6 @@ async function start() {
 
 function startManipulatingSvg() {
   document.querySelectorAll(".colorize").forEach((g) => {
-    console.log(g);
     document.querySelector("#body_1").classList.remove("hide");
     g.setAttribute("fill", "blue");
     g.addEventListener("click", colorElement);
@@ -34,12 +33,10 @@ function colorElement() {
 function selectArea() {
   this.style.stroke = "black";
   this.style.fill = "white";
-  console.log("mouseover");
 }
 
 function deselectArea() {
   this.style.stroke = "none";
-  console.log("mouseout");
 }
 
 document.querySelectorAll(".color_btn").forEach((colorBtn) => {

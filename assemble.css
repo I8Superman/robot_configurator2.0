@@ -13,8 +13,25 @@ body {
   margin: 0px;
 }
 
-.colorize {
+/*FOR COLORING OF SVGs TO WORK*/
+
+#body_1_img {
   pointer-events: none;
+}
+svg {
+  pointer-events: none;
+}
+
+.colorize {
+  pointer-events: all;
+}
+
+#colors {
+  pointer-events: none;
+}
+
+.color_btn {
+  pointer-events: all;
 }
 
 /* --- MOBILE VIEW --- */
