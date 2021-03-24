@@ -18,7 +18,7 @@ async function init() {
   let response = await fetch("robot/robot_parts.svg");
   let svgData = await response.text();
   document.querySelector("#preview").innerHTML = svgData;
-  console.log;
+  // console.log;
   makeClickableParts();
   startManipulatingSvg();
 }
@@ -36,7 +36,6 @@ function togglePart(e) {
 
   // This gets the img inside the .part_container. Also see preview.css. I added pointer-events: none to the img, so you can only click the container:
   const bodyPartImg = target.children[0]; // This will give us the img element
-
   const clickedPart = bodyPartImg.getAttribute("data-part"); // This will get us the identifier (the data-part) we want
   const partName = clickedPart.slice(0, clickedPart.lastIndexOf("_")); // Gets part name without number ('_2')
   // console.log(clickedPart);
@@ -67,4 +66,8 @@ function togglePart(e) {
     const partToShow = document.querySelector(`#${clickedPart}`);
     partToShow.classList.remove("hide");
   }
+
+  document.querySelector("#btn button").addEventListener("click", () => {
+    document.querySelector("#preview svg").classList.add("hide");
+  });
 }
