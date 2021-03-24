@@ -4,7 +4,7 @@ let elementToPaint;
 let color;
 
 async function start() {
-  let response = await fetch("./robots/robot_1.svg");
+  let response = await fetch("./robot/robot_parts.svg");
   let mySvgData = await response.text();
   document.querySelector("#preview").innerHTML = mySvgData;
   startManipulatingSvg();
@@ -12,7 +12,7 @@ async function start() {
 
 function startManipulatingSvg() {
   document.querySelectorAll(".colorize").forEach((g) => {
-    document.querySelector("#body_1").classList.remove("hide");
+    document.querySelector("#body_2").classList.remove("hide");
     g.setAttribute("fill", "blue");
     g.addEventListener("click", colorElement);
     g.addEventListener("mouseover", selectArea);
