@@ -1,6 +1,7 @@
 "use strict";
 let elementToPaint;
 let color;
+let customize = document.querySelector("input");
 
 export function startManipulatingSvg() {
   document.querySelectorAll(".colorize").forEach((g) => {
@@ -35,5 +36,6 @@ function colorSelected() {
   color = this.getAttribute("fill");
   if (elementToPaint !== undefined) {
     elementToPaint.style.fill = this.getAttribute("fill");
+    elementToPaint.style.fill = customize.value;
   }
 }
