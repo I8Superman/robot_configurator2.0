@@ -15,9 +15,9 @@ body {
 
 /*FOR COLORING OF SVGs TO WORK*/
 
-#body_1_img {
+/* #body_1_img {
   pointer-events: none;
-}
+} */
 svg {
   pointer-events: none;
 }
