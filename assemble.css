@@ -3,6 +3,7 @@
   box-sizing: border-box;
 }
 /* Hide scrollbars in all scrollable divs */
+
 *::-webkit-scrollbar {
   position: relative;
   display: none;
@@ -10,6 +11,10 @@
 
 body {
   margin: 0px;
+}
+
+.colorize {
+  pointer-events: none;
 }
 
 /* --- MOBILE VIEW --- */
@@ -35,9 +40,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-
-  #preview_container #nav {
   }
 
   #preview {
