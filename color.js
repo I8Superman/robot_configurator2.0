@@ -1,6 +1,7 @@
 "use strict";
 document.addEventListener("DOMContentLoaded", start);
 let elementToPaint;
+let color;
 
 async function start() {
   let response = await fetch("./robots/robot_1.svg");
@@ -10,7 +11,7 @@ async function start() {
 }
 
 function startManipulatingSvg() {
-  document.querySelectorAll("g").forEach((g) => {
+  document.querySelectorAll(".colorize").forEach((g) => {
     document.querySelector("#body_1").classList.remove("hide");
     g.setAttribute("fill", "blue");
     g.addEventListener("click", colorElement);
@@ -20,14 +21,17 @@ function startManipulatingSvg() {
 }
 
 function colorElement() {
-  //this is what will be handled
+  if (color != undefined) {
+    console.log((this.style.fill = color));
+    this.style.fill = color;
+  } else {
+    this.style.fill = "lightgrey";
+  }
   elementToPaint = this;
-  // console.log(elementToPaint);
-  this.style.fill = "lightgrey";
 }
 
 function selectArea() {
-  this.style.stroke = "white";
+  this.style.stroke = "black";
   this.style.fill = "white";
 }
 
@@ -37,14 +41,11 @@ function deselectArea() {
 
 document.querySelectorAll(".color_btn").forEach((colorBtn) => {
   colorBtn.addEventListener("click", colorSelected);
-  // console.log(colorBtn);
 });
 
 function colorSelected() {
-  //get this btns color to fill
-  console.log("click");
-  elementToPaint.style.fill = this.getAttribute("fill");
-  // if (elementToPaint !== undefined) {
-  //   elementToPaint.style.fill = this.getAttribute("fill");
-  // }
+  color = this.getAttribute("fill");
+  if (elementToPaint !== undefined) {
+    elementToPaint.style.fill = this.getAttribute("fill");
+  }
 }
