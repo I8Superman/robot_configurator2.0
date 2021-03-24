@@ -1,6 +1,7 @@
 "use strict";
 document.addEventListener("DOMContentLoaded", start);
 let elementToPaint;
+let color;
 
 async function start() {
   let response = await fetch("./robots/robot_1.svg");
@@ -21,12 +22,13 @@ function startManipulatingSvg() {
 }
 
 function colorElement() {
-  //this is what will be handled
-  console.log("click");
+  if (color != undefined) {
+    console.log((this.style.fill = color));
+    this.style.fill = color;
+  } else {
+    this.style.fill = "lightgrey";
+  }
   elementToPaint = this;
-  console.log(this);
-  console.log(elementToPaint);
-  this.style.fill = "lightgrey";
 }
 
 function selectArea() {
@@ -37,17 +39,15 @@ function selectArea() {
 
 function deselectArea() {
   this.style.stroke = "none";
+  console.log("mouseout");
 }
 
 document.querySelectorAll(".color_btn").forEach((colorBtn) => {
   colorBtn.addEventListener("click", colorSelected);
-  // console.log(colorBtn);
 });
 
 function colorSelected() {
-  //get this btns color to fill
-  console.log("last function");
-  elementToPaint.style.fill = this.getAttribute("fill");
+  color = this.getAttribute("fill");
   if (elementToPaint !== undefined) {
     elementToPaint.style.fill = this.getAttribute("fill");
   }
