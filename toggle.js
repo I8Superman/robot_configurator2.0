@@ -66,8 +66,9 @@ function togglePart(e) {
     const partToShow = document.querySelector(`#${clickedPart}`);
     partToShow.classList.remove("hide");
   }
-
-  document.querySelector("#btn button").addEventListener("click", () => {
-    document.querySelector("#preview svg").classList.add("hide");
-  });
 }
+
+//reset robot
+document.querySelector("#btn button").addEventListener("click", () => {
+  document.querySelector("#preview svg").classList.add("hide");
+});
