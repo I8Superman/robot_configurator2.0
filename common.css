@@ -73,7 +73,7 @@ button:hover {
 }
 
 /*PREVIEW PAGE*/
-#preview {
+/* #preview {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -93,4 +93,4 @@ button:hover {
   #preview svg {
     width: 60%;
   }
-}
+} */

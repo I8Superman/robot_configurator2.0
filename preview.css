@@ -6,38 +6,30 @@
 /* --body-width: 200px;
     --body-height: 223px;
 }  */
-#nav ul {
-  display: flex;
-  justify-content: space-evenly;
-}
-ul li {
-  list-style: none;
-  text-transform: uppercase;
-  color: black;
-  font-size: 0.8rem;
+
+.part_container img {
+    pointer-events: none;
 }
 
-li a {
-  color: black;
-}
 #preview {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #preview svg {
-  width: 80%;
-  max-width: 80%;
-  position: absolute;
+    width: 80%;
+    max-width: 80%;
+    position: absolute;
 }
 
 .hide {
-  display: none;
+    display: none;
 }
 
 @media only screen and (min-width: 1400px) {
-  #preview svg {
+
+    #preview svg {
     width: 60%;
-  }
+}
 }
