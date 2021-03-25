@@ -84,7 +84,7 @@ svg {
 }
 
 /* --- MOBILE VIEW --- */
-@media only screen and (max-width: 799px) {
+@media only screen and (max-width: 699px) {
   #configurator {
     padding: 2vw;
     width: 100vw;
@@ -212,7 +212,7 @@ svg {
 
 /* --- BIGGER THAN MOBILE --- */
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 700px) {
   #configurator {
     width: 100vw;
     height: 100vh;
@@ -257,12 +257,13 @@ svg {
     height: 90%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    
     margin: auto;
     padding-top: 5vw;
   }
   #chosen ul li {
     padding: 0.3vw;
+    margin-top: 1vw;
   }
 
   #chosen ul li img {
