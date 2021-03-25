@@ -16,7 +16,7 @@
     border: 2px black solid;
     justify-content: center;
     align-items: center;
-    background-image: url(./img/preview_background_2.jpg);
+    background-image: url(./img/preview_background.jpg);
     background-size: cover;
     background-position-x: center;
 }
