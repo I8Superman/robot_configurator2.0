@@ -13,14 +13,23 @@
 
 #preview {
     display: flex;
+    border: 2px black solid;
     justify-content: center;
     align-items: center;
+    background-image: url(./img/preview_background.jpg);
+    background-size: cover;
+    background-position-x: center;
 }
 
 #preview svg {
     width: 80%;
     max-width: 80%;
     position: absolute;
+}
+
+.shadows {
+    -webkit-filter: drop-shadow(5px 5px 5px rgb(0, 0, 0));
+    filter: drop-shadow(5px 5px 5px rgb(0, 0, 0));
 }
 
 .hide {

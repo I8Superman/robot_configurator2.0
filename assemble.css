@@ -9,9 +9,9 @@
   display: none;
 }
 
-/* body {
-  margin: 0px;
-} */
+body {
+  background-image: url(./img/scrap_background.jpg);
+}
 
 /*FOR COLORING OF SVGs TO WORK*/
 
@@ -20,7 +20,6 @@
 } */
 svg {
   pointer-events: none;
-  
 }
 
 .colorize {
@@ -51,7 +50,7 @@ input {
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
-    box-shadow: 5px 5px 15px 5px #d0d0d0;
+    box-shadow: 5px 5px 20px 5px #000000;
   }
 
   #chosen ul {
@@ -149,7 +148,6 @@ input {
 
   .part_container img {
     height: 15vw;
-    
   }
 
   #colors {
@@ -183,14 +181,14 @@ input {
   #configurator {
     width: 100vw;
     height: 100vh;
-    padding: 2vw 3vw 3vw 3vw;
+    padding: 0vw 3vw 3vw 3vw;
     display: grid;
     grid-template-areas:
       "preview bodyparts"
       "colors reset";
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 58% 40%;
     grid-template-rows: 70% 25%;
-    gap: 2vw 2vw;
+    gap: 3% 2%;
   }
   /* Here the preview_container takes up the grid area, but only serves to contain the #preview */
   /* #preview_container {
@@ -218,16 +216,35 @@ input {
     -moz-border-radius: 25px;
     -ms-border-radius: 25px;
     -o-border-radius: 25px;
-    box-shadow: 5px 5px 15px 5px #d0d0d0;
+    box-shadow: 5px 5px 20px 5px #000000;
     /* z-index: -1; */
     /* This needs fixing */
+  }
+
+  #chosen ul {
+    list-style-type: none;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: auto; 
+    padding-top: 5vw;
+  }
+  #chosen ul li {
+    padding: 0.3vw;
+  }
+
+  #chosen ul li img {
+    height: 3em;
+    margin: auto;
+    display: block;
   }
 
   /* See preview.css for positioning of the robot body parts */
 
   #bodyparts {
     grid-area: bodyparts;
-    margin: 0 1vw;
+    /* margin: 0 1vw; */
     display: flex;
     flex-direction: column;
     gap: 0.5vw;
