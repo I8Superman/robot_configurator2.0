@@ -15,9 +15,14 @@ body {
 
 /*FOR COLORING OF SVGs TO WORK*/
 
-/* #body_1_img {
-  pointer-events: none;
-} */
+ul li {
+  color: bisque;
+}
+
+li a {
+  color: bisque;
+}
+
 svg {
   pointer-events: none;
 }
@@ -40,12 +45,6 @@ svg {
 .color_btn:hover {
   transform: scale(0.8);
 }
-
-input {
-  width: 70px;
-  height: 70px;
-}
-
 
  /* --- THE BAR THAT SHOWS WHAT PARTS HAVE BEEN SELECTED --- */
   
@@ -89,15 +88,15 @@ input {
     scroll-behavior: smooth;
     display: grid;
     grid-template-areas: "preview" "bodyparts" "colors" "reset";
-    grid-template-rows: 94vw 90vw 30vw 20vw;
+    grid-template-rows: 85vw 90vw 30vw 20vw;
     row-gap: 3vw;
   }
 
   #navigation {
+    position: relative;
     width: 100vw;
     height: 4vw;
-    background-color: aquamarine;
-    z-index: 1;
+  
   }
   /* #preview_container only here to fix #preview and hide scroll content behind it - maybe there's a better solution? */
 
@@ -109,13 +108,16 @@ input {
   }
 
   #preview {
-    background-color: rgb(66, 187, 72);
-    /* border-radius: 15px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px; */
-    /* box-shadow: 5px 5px 5px 0px #3d3c3c; */
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    box-shadow: 5px 5px 20px 5px #000000;
+  }
+
+
+  #chosen {
+    box-shadow: 2px 2px 20px 5px #000000;
   }
 
   #chosen ul {
@@ -126,7 +128,6 @@ input {
   }
 
   #bodyparts {
-    background-color: aquamarine;
     grid-area: bodyparts;
     display: flex;
     flex-direction: column;
@@ -138,13 +139,19 @@ input {
     height: 20vw;
     display: grid;
     grid-template-columns: repeat(6, 25%);
-    grid-gap: 5%;
+    grid-gap: 2%;
     overflow-x: scroll;
     scroll-behavior: smooth;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
   }
 
   .part_container {
-    background-color: rgb(184, 140, 226);
+    background-color: rgba(236, 230, 241, 0.5);
+    box-shadow: 5px 5px 20px 5px #000000;
     border: 1px black solid;
     display: flex;
     justify-content: center;
@@ -156,15 +163,30 @@ input {
   }
 
   #colors {
-    background-color: rgb(212, 231, 38);
+    background-color: rgba(236, 230, 241, 0.5);
     grid-area: colors;
     padding: 2vw;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    box-shadow: 5px 5px 20px 5px #000000;
   }
 
   #palette {
     display: flex;
-    /* height: 100%;
-    width: 100%; */
+    justify-content: space-between;
+  }
+
+  #palette .color_btn {
+    width: 10vw;
+    height: 10vw;
+  }
+
+  input {
+    width: 10vw;
+    height: 10vw;
   }
 
   #btn {
@@ -296,10 +318,17 @@ input {
 
   #palette {
     display: flex;
+    justify-content: space-between;
   }
 
-  #palette svg {
-    width: 80%;
+  #palette .color_btn {
+    width: 4vw;
+    height: 4vw;
+  }
+
+  input {
+    width: 4vw;
+    height: 4vw;
   }
 
   .color_btn:hover {
