@@ -23,7 +23,7 @@
 
 #preview svg {
     width: 80%;
-    max-width: 80%;
+    
     position: absolute;
 }
 
@@ -34,6 +34,13 @@
 
 .hide {
     display: none;
+}
+
+@media only screen and (max-width: 699px) {
+
+    #preview svg {
+    width: 110%;
+}
 }
 
 @media only screen and (min-width: 1400px) {
