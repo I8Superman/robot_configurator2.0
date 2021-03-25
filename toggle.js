@@ -32,18 +32,20 @@ function makeClickableParts() {
 function togglePart(e) {
   // This code can be used for any part, heads, arms, legs, bodies etc.
   const target = e.target;
-  // console.log(target)
+  // console.log(target);
   // This gets the img inside the .part_container. Also see preview.css. I added pointer-events: none to the img, so you can only click the container:
-  const bodyPartImg = target.children[0]; // This will give us the img element        
+  const bodyPartImg = target.children[0]; // This will give us the img element
   const clickedPart = bodyPartImg.getAttribute('data-part'); // This will get us the identifier (the data-part) we want
   const partName = clickedPart.slice(0, clickedPart.lastIndexOf('_')); // Gets part name without number ('_2')
   // console.log(clickedPart);
   // console.log(partName);
+  let child;
+
   removeOldPart();
 
   function removeOldPart() {
     const partToHide = parts[partName];
-    // console.log(partToHide);
+    console.log(partToHide);
 
     if (partToHide === "") {
       // If nothing was previously selected, nothing will be removed
@@ -56,15 +58,28 @@ function togglePart(e) {
       document.querySelector(`#${partToHide}`).classList.add("hide");
       const colorElements = document.querySelectorAll(`#${partToHide} .colorize`); // Get the g elements inside the part
       console.log(colorElements);
-      colorElements.forEach(elem => 
-        elem.style.fill = "none" );
+      colorElements.forEach(elem =>
+        elem.style.fill = "none");
+      // remove already selected part from chosen ul
+      const toBeRemoved = document.querySelector(`li[data-part="${partToHide}"`);
+      toBeRemoved.remove();
     } else {
+      const toBeRemoved = document.querySelector(`li[data-part="${partToHide}"`);
+      console.log(toBeRemoved);
+      toBeRemoved.remove();
       document.querySelector(`#${partToHide}`).classList.add("hide");
       addNewPart();
     }
   }
 
   function addNewPart() {
+    // move selected part into chosen ul
+    let parent = document.querySelector("#chosen ul")
+    child = document.createElement("li");
+    let childImg = bodyPartImg.cloneNode(true);
+    child.appendChild(childImg);
+    parent.appendChild(child);
+    child.dataset.part = clickedPart;
     parts[partName] = clickedPart; // Update parts obj with the just selected part
     //console.log(parts);
     const partToShow = document.querySelector(`#${clickedPart}`);
@@ -74,8 +89,27 @@ function togglePart(e) {
     document.querySelector("#btn button").addEventListener("click", () => {
       partToShow.classList.add("hide");
     });
+    flipAnimation();
+  }
+
+  function flipAnimation() {
+    // FIRST
+    const start = bodyPartImg.getBoundingClientRect();
+    console.log(start);
+    // // LAST
+    const end = child.getBoundingClientRect();
+    console.log(end);
+    // // INVERT (translate element to the start position)
+    const diffX = start.x - end.x;
+    const diffY = start.y - end.y;
+    child.style.transform = `translate(${diffX}px, ${diffY}px)`;
+    child.offsetHeight;
+    // // PLAY: animate the element to translate (0,0)
+    child.style.transition = "transform 1s";
+    child.style.transform = "translate(0, 0)";
   }
 }
+
 
 // -------------------------------------------------------------------------- old code --->
 //REMOVE FROM PREVIEW AND REMOVE ACTIVE CLASS
