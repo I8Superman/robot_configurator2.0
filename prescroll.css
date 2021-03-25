@@ -92,6 +92,10 @@ a:visited {
   text-decoration: none;
 }
 
+.link:hover {
+  color: rgb(66, 64, 64);
+}
+
 /* --- MOBILE VIEW --- */
 @media only screen and (max-width: 699px) {
   section h1 {
