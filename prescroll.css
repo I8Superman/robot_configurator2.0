@@ -115,3 +115,25 @@ a:visited {
     max-width: 25vw;
   }
 }
+
+#sec1,
+#sec2,
+#sec3,
+#sec4,
+#sec5,
+#sec6 {
+  height: 100vh;
+  width: 100%;
+}
+.parts {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2vw;
+  margin: 10vw 0;
+  height: auto;
+}
+
+img {
+  height: 18vw;
+  margin: 0;
+}
