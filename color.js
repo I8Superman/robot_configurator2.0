@@ -35,7 +35,7 @@ function colorSelected(e) {
     elementToPaint !== undefined &&
     e.target.classList.contains("color_btn")
   ) {
-    elementToPaint.style.fill = this.getAttribute("fill");
+    elementToPaint.style.fill = this.style.backgroundColor;
   } else {
     elementToPaint.style.fill = document.querySelector("input").value;
   }

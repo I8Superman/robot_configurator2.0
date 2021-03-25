@@ -32,6 +32,13 @@ svg {
 
 .color_btn {
   pointer-events: all;
+  width: 4vw;
+  height: 4vw;
+  margin-left: 1vw;
+}
+
+.color_btn:hover {
+  transform: scale(0.8);
 }
 
 input {
@@ -39,9 +46,10 @@ input {
   height: 70px;
 }
 
+
  /* --- THE BAR THAT SHOWS WHAT PARTS HAVE BEEN SELECTED --- */
   
-  #chosen {
+ #chosen {
     background-color: rgba(236, 230, 241, 0.5);
     width: 100%;
     position: relative;
@@ -51,28 +59,27 @@ input {
     -ms-border-radius: 25px;
     -o-border-radius: 25px;
     box-shadow: 5px 5px 20px 5px #000000;
-  }
+ }
 
-  #chosen ul {
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    margin: auto; 
-    padding: 0;
-  }
-  #chosen ul li {
-    padding: 0.3vw;
-  }
+#chosen ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 0;
+}
+#chosen ul li {
+  padding: 0.3vw;
+}
 
-  #chosen ul li img {
-    height: 3em;
-    margin: auto;
-    display: block;
-  }
+#chosen ul li img {
+  height: 3em;
+  margin: auto;
+  display: block;
+}
 
 /* --- MOBILE VIEW --- */
 @media only screen and (max-width: 699px) {
-
   #configurator {
     padding: 2vw;
     width: 100vw;
@@ -87,13 +94,13 @@ input {
   }
 
   #navigation {
-      width: 100vw;
-      height: 4vw;
-      background-color: aquamarine;
-      z-index: 1;
-    }
+    width: 100vw;
+    height: 4vw;
+    background-color: aquamarine;
+    z-index: 1;
+  }
   /* #preview_container only here to fix #preview and hide scroll content behind it - maybe there's a better solution? */
-  
+
   #holding_box {
     grid-area: preview;
     display: grid;
@@ -109,7 +116,6 @@ input {
     -ms-border-radius: 15px;
     -o-border-radius: 15px; */
     /* box-shadow: 5px 5px 5px 0px #3d3c3c; */
-
   }
 
   #chosen ul {
@@ -124,11 +130,10 @@ input {
     grid-area: bodyparts;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;    
+    justify-content: space-between;
   }
 
   #bodyparts > div {
-    
     /* width: 94vw; */
     height: 20vw;
     display: grid;
@@ -207,17 +212,14 @@ input {
     gap: 3%;
   }
 
-
   #preview {
-    width: 100%; 
+    width: 100%
     border-radius: 25px;
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px;
     -ms-border-radius: 25px;
     -o-border-radius: 25px;
     box-shadow: 5px 5px 20px 5px #000000;
-    /* z-index: -1; */
-    /* This needs fixing */
   }
 
   #chosen ul {
@@ -226,7 +228,7 @@ input {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin: auto; 
+    margin: auto;
     padding-top: 5vw;
   }
   #chosen ul li {
