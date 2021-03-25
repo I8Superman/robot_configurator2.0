@@ -12,6 +12,9 @@
 body {
   background-image: url(./img/scrap_background.jpg);
 }
+ul li a {
+  color: bisque;
+}
 
 /*FOR COLORING OF SVGs TO WORK*/
 
