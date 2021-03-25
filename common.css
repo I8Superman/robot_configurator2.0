@@ -44,7 +44,7 @@ li a {
 }
 
 li a:hover li a:active {
-  color: hotpink;
+  color: rgb(100, 100, 207);
   text-decoration: none;
   cursor: pointer;
 }
@@ -84,12 +84,9 @@ button:hover {
 }
 
 @media only screen and (max-width: 699px) {
-
   #navigation {
     position: absolute;
-
   }
-
 }
 
 /*PREVIEW PAGE*/
