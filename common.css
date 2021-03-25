@@ -36,6 +36,8 @@ ul li {
   text-transform: uppercase;
   color: black;
   font-size: 0.8rem;
+  font-weight: bold;
+  padding: 15px;
 }
 
 li a {

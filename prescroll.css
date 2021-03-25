@@ -4,8 +4,14 @@ html,
 body {
   margin: 0;
   padding: 0;
-  font-family: Helvetica;
+  font-family: "Bowlby One SC", cursive;
 }
+
+#navigation {
+  background-color: coral;
+  margin: 0;
+}
+
 section {
   margin: 0;
   padding: 0;
@@ -49,6 +55,7 @@ section h1 {
 
 section {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
 }
@@ -63,8 +70,13 @@ section {
   max-height: 10vw;
   max-width: 10vw;
 }
-#blue {
-  color: blue;
+
+.blue {
+  color: rgb(100, 100, 207);
+}
+
+.purple-word {
+  color: darkviolet;
 }
 a {
   text-decoration: none;
@@ -78,4 +90,24 @@ a:hover {
 a:visited {
   color: black;
   text-decoration: none;
+}
+
+/* --- MOBILE VIEW --- */
+@media only screen and (max-width: 699px) {
+  section h1 {
+    padding: 0;
+    font-size: 3.8rem;
+    line-height: 4.2rem;
+    margin: 0 1vw;
+  }
+  .parts {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2vw;
+    margin: 20vw 0;
+  }
+  .part img {
+    max-height: 25vw;
+    max-width: 25vw;
+  }
 }
