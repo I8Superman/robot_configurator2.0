@@ -1,42 +1,42 @@
 "use strict";
 let elementToPaint;
-let color;
-let customize = document.querySelector("input");
+let colorInput = document.querySelector("input");
 
 export function startManipulatingSvg() {
-  console.log('Coloring is working');
+  console.log("Coloring is working");
   document.querySelectorAll(".colorize").forEach((g) => {
     g.addEventListener("click", colorElement);
     g.addEventListener("mouseover", selectArea);
     g.addEventListener("mouseout", deselectArea);
   });
+  colorInput.addEventListener("input", colorSelected);
 }
 
 function colorElement() {
-  if (color != undefined) {
-    this.style.fill = color;
-  } else {
-    this.style.fill = "lightgrey";
-  }
+  this.style.fill = "lightgrey";
   elementToPaint = this;
 }
 
 function selectArea() {
-  this.style.stroke = "black";
+  this.style.stroke = "white";
 }
 
 function deselectArea() {
   this.style.stroke = "none";
+  console.log("click");
 }
 
 document.querySelectorAll(".color_btn").forEach((colorBtn) => {
   colorBtn.addEventListener("click", colorSelected);
 });
 
-function colorSelected() {
-  color = this.getAttribute("fill");
-  if (elementToPaint !== undefined) {
+function colorSelected(e) {
+  if (
+    elementToPaint !== undefined &&
+    e.target.classList.contains("color_btn")
+  ) {
     elementToPaint.style.fill = this.getAttribute("fill");
-    elementToPaint.style.fill = customize.value;
+  } else {
+    elementToPaint.style.fill = document.querySelector("input").value;
   }
 }
