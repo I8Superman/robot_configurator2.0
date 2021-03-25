@@ -4,6 +4,7 @@ let color;
 let customize = document.querySelector("input");
 
 export function startManipulatingSvg() {
+  console.log('Coloring is working');
   document.querySelectorAll(".colorize").forEach((g) => {
     g.addEventListener("click", colorElement);
     g.addEventListener("mouseover", selectArea);
