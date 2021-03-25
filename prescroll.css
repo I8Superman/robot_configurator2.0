@@ -4,8 +4,14 @@ html,
 body {
   margin: 0;
   padding: 0;
-  font-family: Helvetica;
+  font-family: "Bowlby One SC", cursive;
 }
+
+#navigation {
+  background-color: coral;
+  margin: 0;
+}
+
 section {
   margin: 0;
   padding: 0;
@@ -63,8 +69,12 @@ section {
   max-height: 10vw;
   max-width: 10vw;
 }
-#blue {
-  color: blue;
+.blue {
+  color: rgb(100, 100, 207);
+}
+
+.purple-word {
+  color: darkviolet;
 }
 a {
   text-decoration: none;
