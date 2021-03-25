@@ -62,7 +62,7 @@ tl.from("#masterTextPath", dur, {
 });
 
 // FireFox
-tl.from("#mainText", { duration: dur, attr: { textLength: 2000 } }, 0);
+tl.from("#mainText", { duration: dur, attr: { textLength: 2500 } }, 0);
 // Chrome
-tl.from("#masterTextPath", { duration: dur, attr: { textLength: 2550 } }, 0);
+tl.from("#masterTextPath", { duration: dur, attr: { textLength: 3550 } }, 0);
 tl.reversed(true);
