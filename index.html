@@ -9,27 +9,31 @@
     <title>Robot Configurator</title>
   </head>
   <body>
-    <ul id="navigation">
+    <!-- <ul id="navigation">
       <li><a href="index.html">HOME</a></li>
       <li><a href="prescroll.html">INFO</a></li>
       <li><a href="assemble.html">CONFIGURATOR</a></li>
-    </ul>
+    </ul> -->
     <section id="title">
       <h1 class="hide">Welcome to Recycled Robot Factory</h1>
     </section>
     <section id="robot">
       <img src="./img/head_2.png" alt="head" id="head" class="hide" />
-      <img src="./img/body_1.png" alt="body" id="body" class="hide" />
+      <img src="./img/bod1NoTransp.png" alt="body" id="body" class="hide" />
       <img src="./img/legs_1.png" alt="legs" id="legs" class="hide" />
       <img src="./img/arm_2_left.png" alt="arm" id="armLeft" class="hide" />
       <img src="./img/arm_2_right.png" alt="arm" id="armRight" class="hide" />
     </section>
 
-    <svg id="demo" xmlns="http://www.w3.org/2000/svg" viewbox=" 50 40 1200 300">
+    <svg
+      id="demo"
+      xmlns="http://www.w3.org/2000/svg"
+      viewbox=" -450 40 1900 300"
+    >
       <defs>
         <path
           id="master"
-          d="M206,153c1.11,0,600.22,0,601.33,0C737.14,391.17,818,317,818,227a165,165,0,0,0-330,0c0,89.22,87.11,161.9,176.28,164.9,1.91.07,329.81.1,331.72.1"
+          d="M206,153c1.11,0,600.22,0,601.33,0C737.14,391.17,818,317,818,227a165,165,0,0,0-330,0c0,89.22,87.11,161.9,176.28,164.9,1.91.07,329.81.331.72.1"
           stroke="none"
           fill="none"
         />
@@ -43,13 +47,13 @@
           startoffset="0%"
         >
           Build Your Own
-          <tspan fill="hotpink">Robot</tspan>
+          <tspan fill="blue">Robot</tspan>
         </textpath>
       </text>
     </svg>
 
     <div id="btn">
-      <a href="/scrolling.html"> <button>see more</button></a>
+      <a href="prescroll.html"> <button>see more</button></a>
     </div>
   </body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>

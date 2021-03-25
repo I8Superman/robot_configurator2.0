@@ -22,6 +22,13 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  height: 27px;
+  /* position: fixed;
+  width: 100%;
+  background-color: ivory;
+
+  height: 27px;
+  margin-top: 0; */
 }
 ul li {
   list-style: none;
@@ -51,23 +58,25 @@ button {
   width: 10rem;
   height: 5rem;
   border: none;
-  border-radius: 45px;
-  -webkit-border-radius: 45px;
-  -moz-border-radius: 45px;
-  -ms-border-radius: 45px;
-  -o-border-radius: 45px;
+  border-radius: 15px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
   transition: transform 0.2s, background-color 0s 0.1s, color 0s 0.1s;
   -webkit-transition: transform 0.2s, background-color 0s 0.1s, color 0s 0.1s;
   -moz-transition: transform 0.2s, background-color 0s 0.1s, color 0s 0.1s;
   -ms-transition: transform 0.2s, background-color 0s 0.1s, color 0s 0.1s;
   -o-transition: transform 0.2s, background-color 0s 0.1s, color 0s 0.1s;
-  box-shadow: 5px 5px 15px 5px #d0d0d0;
+  box-shadow: 1px 1px 2px 1px blue;
+  cursor: pointer;
+  background-color: bisque;
 }
 
 #btn:hover,
 button:hover {
   transform: rotateY(180deg);
-  color: hotpink;
+  color: blue;
 }
 
 #btn:hover #btn {
