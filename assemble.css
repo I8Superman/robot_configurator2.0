@@ -9,9 +9,9 @@
   display: none;
 }
 
-body {
+/* body {
   margin: 0px;
-}
+} */
 
 /*FOR COLORING OF SVGs TO WORK*/
 
@@ -20,6 +20,7 @@ body {
 } */
 svg {
   pointer-events: none;
+  
 }
 
 .colorize {
@@ -35,111 +36,21 @@ svg {
 }
 
 input {
-  position: absolute;
-  top: 83%;
-  left: 35%;
   width: 75px;
   height: 30px;
 }
 
-/* --- MOBILE VIEW --- */
-@media only screen and (max-width: 699px) {
-  #configurator {
-    padding: 3vw;
-    width: 100vw;
-    /* height: 100vh;
-        overflow: hidden; */
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-  }
-
-  /* #preview_container only here to fix #preview and hide scroll content behind it - maybe there's a better solution? */
-  #preview_container {
-    /* background-color: darkmagenta; */
-    position: fixed;
-    top: 0vw;
-    left: 0vw;
-    width: 100vw;
-    height: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #preview {
-    width: 94vw;
-    height: 94vw;
-  }
-
-  #bodyparts {
-    margin-top: 100vw;
-    width: 94vw;
-  }
-
-  #bodyparts > div {
-    width: 94vw;
-    height: 30vw;
-    margin-top: 3vw;
-    display: grid;
-    grid-template-columns: repeat(6, 35%);
-    grid-gap: 2%;
-    overflow-x: scroll;
-    scroll-behavior: smooth;
-  }
-
-  .part_container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .part_container img {
-    max-height: 20vw;
-  }
-
-  #colors {
-    margin-top: 3vw;
-    width: 94vw;
-    height: 94vw;
-  }
-
-  #activator {
-    margin-top: 3vw;
-    width: 94vw;
-    height: 94vw;
-  }
-}
-
-/* --- BIGGER THAN MOBILE --- */
-
-@media only screen and (min-width: 700px) {
-  #configurator {
-    width: 100vw;
-    height: 100vh;
-    padding: 3vw;
-    display: grid;
-    grid-template-areas:
-      "preview bodyparts"
-      "colors reset";
-    grid-template-columns: 60% 40%;
-    grid-template-rows: 70% 20%;
-  }
-  /* Here the preview_container takes up the grid area, but only serves to contain the #preview */
-  #preview_container {
-    grid-area: preview;
-    margin: 0 1vw;
-    display: flex;
-    gap: 1vw;
-  }
-
+ /* --- THE BAR THAT SHOWS WHAT PARTS HAVE BEEN SELECTED --- */
+  
   #chosen {
     background-color: rgb(236, 230, 241);
+    width: 100%;
     position: relative;
-    border-radius: 15px;
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    -ms-border-radius: 25px;
-    -o-border-radius: 25px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
     box-shadow: 5px 5px 15px 5px #d0d0d0;
   }
 
@@ -147,8 +58,7 @@ input {
     list-style-type: none;
     display: flex;
     flex-direction: column;
-    margin: auto;
-
+    margin: auto; 
     padding: 0;
   }
   #chosen ul li {
@@ -160,13 +70,149 @@ input {
     margin: auto;
     display: block;
   }
-  /*CHOSEN PARTS TO ANIMATE*/
+
+/* --- MOBILE VIEW --- */
+@media only screen and (max-width: 699px) {
+
+  #configurator {
+    padding: 2vw;
+    width: 100vw;
+    /* height: 100vh;
+        overflow: hidden; */
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    display: grid;
+    grid-template-areas: "preview" "bodyparts" "colors" "reset";
+    grid-template-rows: 94vw 90vw 30vw 20vw;
+    row-gap: 3vw;
+  }
+
+  #navigation {
+      width: 100vw;
+      height: 4vw;
+      background-color: aquamarine;
+      z-index: 1;
+    }
+  /* #preview_container only here to fix #preview and hide scroll content behind it - maybe there's a better solution? */
+  
+  #holding_box {
+    grid-area: preview;
+    display: grid;
+    grid-template-columns: 15% 82%;
+    gap: 3%;
+  }
+
+  #preview {
+    background-color: rgb(66, 187, 72);
+    /* border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px; */
+    /* box-shadow: 5px 5px 5px 0px #3d3c3c; */
+
+  }
+
+  #chosen ul {
+    padding-top: 15vw;
+  }
+  #chosen ul li {
+    margin-top: 1vw;
+  }
+
+  #bodyparts {
+    background-color: aquamarine;
+    grid-area: bodyparts;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    
+  }
+
+  #bodyparts > div {
+    
+    /* width: 94vw; */
+    height: 20vw;
+    display: grid;
+    grid-template-columns: repeat(6, 25%);
+    grid-gap: 5%;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+  }
+
+  .part_container {
+    background-color: rgb(184, 140, 226);
+    border: 1px black solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .part_container img {
+    height: 15vw;
+    
+  }
+
+  #colors {
+    background-color: rgb(212, 231, 38);
+    grid-area: colors;
+    padding: 2vw;
+  }
+
+  #palette {
+    display: flex;
+    /* height: 100%;
+    width: 100%; */
+  }
+
+  #btn {
+    grid-area: reset;
+    display: flex;
+    justify-content: center;
+  }
+
+  button {
+    font-size: 1rem;
+    width: 100%;
+    height: 90%;
+  }
+}
+
+/* --- BIGGER THAN MOBILE --- */
+
+@media only screen and (min-width: 700px) {
+  #configurator {
+    width: 100vw;
+    height: 100vh;
+    padding: 2vw 3vw 3vw 3vw;
+    display: grid;
+    grid-template-areas:
+      "preview bodyparts"
+      "colors reset";
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 70% 25%;
+    gap: 2vw 2vw;
+  }
+  /* Here the preview_container takes up the grid area, but only serves to contain the #preview */
+  /* #preview_container {
+    grid-area: preview;
+    margin: 0 1vw;
+    display: flex;
+    gap: 1vw;
+  } */
+
+  #holding_box {
+    /* width: 100%;
+    height: 100%; */
+    grid-area: preview;
+    display: grid;
+    grid-template-columns: 10% 87%;
+    gap: 3%;
+  }
+
 
   #preview {
     background-color: rgb(236, 230, 241);
-    position: relative;
-    height: 100%;
-    width: 100%;
+    width: 100%; 
     border-radius: 25px;
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px;
@@ -217,10 +263,15 @@ input {
   }
 
   #colors {
+    background-color: rgb(212, 231, 38);
     grid-area: colors;
-    margin: 2vw 0 0 0;
-    padding-left: 2vw;
+    padding: 2vw;
   }
+
+  #palette {
+    display: flex;
+  }
+
   .color_btn:hover {
     cursor: pointer;
   }
@@ -245,7 +296,7 @@ input {
   }
 }
 
-/* Animation classes */
+/* ANIMATION CLASSES */
 
 /* Create animation for adding a feature */
 .animate-feature-in {
