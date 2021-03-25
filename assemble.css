@@ -11,7 +11,10 @@
 
 body {
   background-image: url(./img/scrap_background.jpg);
+  background-size: cover;
+  background-position-x: center;
 }
+
 ul li a {
   color: bisque;
 }
@@ -81,7 +84,7 @@ svg {
 }
 
 /* --- MOBILE VIEW --- */
-@media only screen and (max-width: 699px) {
+@media only screen and (max-width: 799px) {
   #configurator {
     padding: 2vw;
     width: 100vw;
@@ -120,6 +123,8 @@ svg {
 
 
   #chosen {
+    height: 100%;
+    justify-content: space-between;
     box-shadow: 2px 2px 20px 5px #000000;
   }
 
@@ -207,7 +212,7 @@ svg {
 
 /* --- BIGGER THAN MOBILE --- */
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 800px) {
   #configurator {
     width: 100vw;
     height: 100vh;
