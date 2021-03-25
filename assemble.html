@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="assemble.css" />
     <link rel="stylesheet" href="common.css" />
+    <link rel="stylesheet" href="assemble.css" />
     <link rel="stylesheet" href="preview.css" />
 
     <title>Robot assembly</title>
@@ -20,12 +20,11 @@
     </ul>
     <main>
       <div id="configurator">
-        <div id="preview_container">
-          <!-- APPEND CREATED LIST HERE -->
+        <div id="holding_box">
           <section id="chosen">
             <ul></ul>
           </section>
-          <div id="preview"></div>
+          <div id="preview"><!-- APPEND SVG HERE --></div>
         </div>
         <div id="bodyparts">
           <div id="heads">
@@ -111,74 +110,76 @@
         </div>
 
         <section id="colors">
-          Select Your Color:
-          <svg viewbox="0 0 800 200">
-            <rect
-              class="color_btn"
-              x="0"
-              width="55
-          "
-              height="55
-          "
-              fill="coral"
-            />
-            <rect
-              class="color_btn"
-              x="60"
-              width="55
+          <p>Select Your Color:</p>
+          <div id="palette">
+            <svg viewbox="0 0 500 55">
+              <rect
+                class="color_btn"
+                x="0"
+                width="55
             "
-              height="55
+                height="55
             "
-              fill="darkseagreen"
-            />
-            <rect
-              class="color_btn"
-              x="120"
-              width="55
-            "
-              height="55
-            "
-              fill="blue"
-            />
-            <rect
-              class="color_btn"
-              x="180"
-              width="55
-            "
-              height="55
-            "
-              fill="darkviolet"
-            />
-            <rect
-              class="color_btn"
-              x="240"
-              width="55
-            "
-              height="55
-            "
-              fill="dodgerblue"
-            />
-            <rect
-              class="color_btn"
-              x="300"
-              width="55
-            "
-              height="55
-            "
-              fill="bisque"
-            />
-            <rect
-              class="color_btn"
-              x="360"
-              width="55
-            "
-              height="55
-            "
-              fill="plum"
-            />
-          </svg>
-          <div class="color_btn">
-            <input type="color" />
+                fill="coral"
+              />
+              <rect
+                class="color_btn"
+                x="60"
+                width="55
+              "
+                height="55
+              "
+                fill="darkseagreen"
+              />
+              <rect
+                class="color_btn"
+                x="120"
+                width="55
+              "
+                height="55
+              "
+                fill="blue"
+              />
+              <rect
+                class="color_btn"
+                x="180"
+                width="55
+              "
+                height="55
+              "
+                fill="darkviolet"
+              />
+              <rect
+                class="color_btn"
+                x="240"
+                width="55
+              "
+                height="55
+              "
+                fill="dodgerblue"
+              />
+              <rect
+                class="color_btn"
+                x="300"
+                width="55
+              "
+                height="55
+              "
+                fill="bisque"
+              />
+              <rect
+                class="color_btn"
+                x="360"
+                width="55
+              "
+                height="55
+              "
+                fill="plum"
+              />
+            </svg>
+            <div class="color_btn">
+              <input type="color" />
+            </div>
           </div>
         </section>
         <div id="btn"><button>reset robot</button></div>
